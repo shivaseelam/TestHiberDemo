@@ -54,7 +54,7 @@ public class BookController {
 	{
 		
 		map.put("book", bookService.getBookById(bookId));
-		//map.put("bookList", bookService.listBooks());
+		map.put("bookList", bookService.listBooks());
 		return "book";
 	}
 }
