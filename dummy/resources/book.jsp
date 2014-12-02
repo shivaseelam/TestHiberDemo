@@ -58,7 +58,7 @@
 <c:url var="action" value="/book/add.html" ></c:url>
 <form:form method="post" action="${action}" commandName="book" cssClass="bookForm">
 	<table>
-	<%-- <c:if test="${!empty bookList.bookName}"> --%>
+	<c:if test="${!empty book.bookName}"> 
 	<tr>
 		<td>
 			<form:label path="id" cssClass="bookLabel">
@@ -70,7 +70,7 @@
 			<form:hidden path="id" />
 		</td> 
 	</tr>
-	<%-- </c:if> --%>
+	</c:if> 
 	<tr>
 		<td>
 			<form:label path="bookName" cssClass="bookLabel">

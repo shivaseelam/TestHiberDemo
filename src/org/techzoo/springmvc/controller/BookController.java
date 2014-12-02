@@ -52,7 +52,6 @@ public class BookController {
 	@RequestMapping("/edit/{bookId}")
 	public String editBook(@PathVariable("bookId")Integer bookId,Map<String, Object> map)
 	{
-		
 		map.put("book", bookService.getBookById(bookId));
 		map.put("bookList", bookService.listBooks());
 		return "book";
