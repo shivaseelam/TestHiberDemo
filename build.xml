@@ -132,6 +132,6 @@
     </target>-->
 
 
-    <target name="main" depends="clean, prep, cleanWebApp, compile, test, war "/>
+    <target name="main" depends="clean, prep, cleanWebApp, compile, war "/>
 
 </project>
