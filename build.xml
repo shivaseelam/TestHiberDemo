@@ -120,6 +120,9 @@
             <fileset dir="." includes="${war.file.name}"/>
         </copy>
     </target>
+	
+	<target name="name" depends="main">
+    </target>
 
     <!--<target name="deploy.exploded" depends="clean, prep, cleanWebApp, compile, war-dev">
         <copy todir="${deploy.dir}/${war.file.name}">
@@ -129,6 +132,6 @@
     </target>-->
 
 
-    <target name="main" depends="clean, prep, cleanWebApp, compile, war "/>
+    <target name="main" depends="clean, prep, cleanWebApp, compile, test, war "/>
 
 </project>
