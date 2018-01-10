@@ -121,7 +121,7 @@
         </copy>
     </target>
 	
-	<target name="name" depends="main">
+	<target name="test" depends="main">
     </target>
 
     <!--<target name="deploy.exploded" depends="clean, prep, cleanWebApp, compile, war-dev">
